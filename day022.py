@@ -14,4 +14,5 @@ while True:
   elif guess == number:
     break
 
-print("It took you",attempts,"guesses to get it correct!")
+guess_word = "guesses" if attempts > 1 else "guess"
+print("It took you",attempts,guess_word,"to get it correct!")
