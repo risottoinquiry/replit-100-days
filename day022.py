@@ -4,19 +4,14 @@ attempts = 0
 print("NUMBER GUESSER! ! !")
 while True:
   guess = int(input("What is your guess?: "))
+  attempts += 1
   if guess < 0:
-     exit()
+    exit()
   if guess > number:
     print("Too high")
-    attempts = attempts+1
   elif guess < number:
-   print("Too low")
-   attempts = attempts+1
+    print("Too low")
   elif guess == number:
-   attempts = attempts+1
-   if attempts >1:
-     print("It took you",attempts,"guesses to get it correct!")
-     exit()
-   if attempts == 1:
-      print("It took you",attempts,"guess to get it correct!")
-      exit()
+    break
+
+print("It took you",attempts,"guesses to get it correct!")
