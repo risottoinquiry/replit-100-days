@@ -11,7 +11,7 @@ while True:
     print("Too high")
   elif guess < number:
     print("Too low")
-  elif guess == number:
+  else:
     break
 
 guess_word = "guesses" if attempts > 1 else "guess"
